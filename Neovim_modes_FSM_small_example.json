@@ -1,0 +1,50 @@
+{
+   "models":[
+      {
+         "name":"Neovim_modes_FSM_small_example",
+         "startElementId":"n",
+         "id":"0",
+         "vertices":[
+            { "id":"n", "name":"Normal" },
+            { "id":"i", "name":"Insert" },
+            { "id":"v", "name":"Visual" }
+         ],
+         "edges":[
+            { "id":"e0",  "name":"i",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "i",      "output" : "" },
+            { "id":"e1",  "name":"I",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "I",      "output" : "" },
+            { "id":"e2",  "name":"a",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "a",      "output" : "" },
+            { "id":"e3",  "name":"A",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "A",      "output" : "" },
+            { "id":"e4",  "name":"o",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "o",      "output" : "" },
+            { "id":"e5",  "name":"O",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "O",      "output" : "" },
+            { "id":"e6",  "name":"gI",     "sourceVertexId":"n", "targetVertexId":"i", "input" : "gI",     "output" : "" },
+            { "id":"e7",  "name":"gi",     "sourceVertexId":"n", "targetVertexId":"i", "input" : "gi",     "output" : "" },
+            { "id":"e8",  "name":"s",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "s",      "output" : "" },
+            { "id":"e9",  "name":"S",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "S",      "output" : "" },
+            { "id":"e10", "name":"C",      "sourceVertexId":"n", "targetVertexId":"i", "input" : "C",      "output" : "" },
+            { "id":"e11", "name":"cc",     "sourceVertexId":"n", "targetVertexId":"i", "input" : "cc",     "output" : "" },
+
+            { "id":"e12", "name":"Esc",    "sourceVertexId":"i", "targetVertexId":"n", "input" : "Esc",    "output" : "" },
+            { "id":"e13", "name":"Ctrl-C", "sourceVertexId":"i", "targetVertexId":"n", "input" : "Ctrl-C", "output" : "" },
+
+            { "id":"e14", "name":"v",      "sourceVertexId":"n", "targetVertexId":"v", "input" : "v",      "output" : "" },
+
+            { "id":"e14", "name":"v",      "sourceVertexId":"v", "targetVertexId":"n", "input" : "v",      "output" : "" },
+            { "id":"e15", "name":"Esc",    "sourceVertexId":"v", "targetVertexId":"n", "input" : "Esc",    "output" : "" },
+            { "id":"e16", "name":"Ctrl-C", "sourceVertexId":"v", "targetVertexId":"n", "input" : "Ctrl-C", "output" : "" },
+            { "id":"e17", "name":"J",      "sourceVertexId":"v", "targetVertexId":"n", "input" : "J",      "output" : "" },
+            { "id":"e18", "name":"gJ",     "sourceVertexId":"v", "targetVertexId":"n", "input" : "gJ",     "output" : "" },
+            { "id":"e19", "name":"u",      "sourceVertexId":"v", "targetVertexId":"n", "input" : "u",      "output" : "" },
+            { "id":"e20", "name":"U",      "sourceVertexId":"v", "targetVertexId":"n", "input" : "U",      "output" : "" },
+            { "id":"e21", "name":"g?",     "sourceVertexId":"v", "targetVertexId":"n", "input" : "g?",     "output" : "" },
+
+            { "id":"e22", "name":"c",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "c",      "output" : "" },
+            { "id":"e22", "name":"C",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "C",      "output" : "" },
+            { "id":"e22", "name":"s",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "s",      "output" : "" },
+            { "id":"e22", "name":"S",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "S",      "output" : "" },
+            { "id":"e22", "name":"R",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "R",      "output" : "" },
+            { "id":"e22", "name":"I",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "I",      "output" : "" },
+            { "id":"e22", "name":"A",      "sourceVertexId":"v", "targetVertexId":"i", "input" : "A",      "output" : "" }
+         ]
+      }
+   ]
+}

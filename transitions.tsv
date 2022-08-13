@@ -1,0 +1,214 @@
+# Normal -> Ex
+n	gQ	cv
+
+# Ex -> Normal
+cv	vi<CR>	n
+
+# Normal -> Insert
+n	i	i
+n	I	i
+n	a	i
+n	A	i
+n	o	i
+n	O	i
+n	gI	i
+n	gi	i
+n	s	i
+n	S	i
+n	C	i
+n	cc	i
+
+# Insert -> Normal
+i	<Esc>	n
+i	<C-[>	n
+i	<C-c>	n
+
+# Insert -> Replace
+i	<Ins>	R
+
+# Normal -> Replace
+n	R	R
+
+# Replace -> Insert
+R	<Ins>	i
+
+# Replace -> Normal
+R	<Esc>	n
+R	<C-[>	n
+
+# Normal -> Virtual Replace
+n	gR	Rv
+
+# Virtual Replace -> Insert
+Rv	<Ins>	i
+
+# Virtual Replace -> Normal
+Rv	<Esc>	n
+Rv	<C-[>	n
+
+# Normal -> Cmdline
+n	:	c
+
+# Normal -> Cmdline (search)
+n	?	cs
+n	/	cs
+
+# Cmdline -> Normal
+c	<Esc>	n
+c	<C-[>	n
+c	<C-c>	n
+c	<CR>	n
+
+# Cmdline (search) -> Normal
+cs	<Esc>	n
+cs	<C-[>	n
+cs	<C-c>	n
+cs	<CR>	n
+
+# Cmdline -> Insert
+c	<C-u>start<CR>	i
+
+# Cmdline -> Replace
+c	<C-u>startreplace<CR>	R
+
+# Normal -> Visual
+n	v	v
+
+# Visual -> Normal
+v	v	n
+v	<Esc>	n
+v	<C-[>	n
+v	<C-c>	n
+v	J	n
+v	gJ	n
+v	u	n
+v	U	n
+v	g?	n
+v	d	n
+v	y	n
+v	~	n
+v	g~	n
+v	gu	n
+v	gU	n
+v	=	n
+v	gq	n
+v	gw	n
+v	g?	n
+v	>	n
+v	<	n
+v	zf	n
+v	g@	n
+
+# Visual -> Insert
+v	C	i
+v	c	i
+v	s	i
+v	S	i
+v	R	i
+v	I	i
+v	A	i
+
+# Visual -> Cmdline
+v	:	c
+v	!	c
+
+# Visual -> Visual line
+v	V	V
+
+# Visual -> Visual block
+v	<C-v>	CTRL-V
+
+# Normal -> Visual line
+n	V	V
+
+# Visual line -> Normal
+V	V	n
+V	<Esc>	n
+V	<C-[>	n
+V	<C-c>	n
+V	J	n
+V	gJ	n
+V	u	n
+V	U	n
+V	g?	n
+V	d	n
+V	y	n
+V	~	n
+V	g~	n
+V	gu	n
+V	gU	n
+V	=	n
+V	gq	n
+V	gw	n
+V	g?	n
+V	>	n
+V	<	n
+V	zf	n
+V	g@	n
+
+# Visual line -> Insert
+V	C	i
+V	c	i
+V	s	i
+V	S	i
+V	R	i
+V	I	i
+V	A	i
+
+# Visual line -> Cmdline
+V	:	c
+V	!	c
+
+# Visual line -> Visual
+V	v	v
+
+# Visual line -> Visual block
+V	<C-v>	CTRL-V
+
+# Normal -> Visual block
+n	<C-v>	CTRL-V
+
+# Visual block -> Normal
+CTRL-V	<C-v>	n
+CTRL-V	<Esc>	n
+CTRL-V	<C-[>	n
+CTRL-V	<C-c>	n
+CTRL-V	J	n
+CTRL-V	gJ	n
+CTRL-V	u	n
+CTRL-V	U	n
+CTRL-V	g?	n
+CTRL-V	d	n
+CTRL-V	y	n
+CTRL-V	~	n
+CTRL-V	g~	n
+CTRL-V	gu	n
+CTRL-V	gU	n
+CTRL-V	=	n
+CTRL-V	gq	n
+CTRL-V	gw	n
+CTRL-V	g?	n
+CTRL-V	>	n
+CTRL-V	<	n
+CTRL-V	zf	n
+CTRL-V	g@	n
+
+# Visual block -> Insert
+CTRL-V	C	i
+CTRL-V	c	i
+CTRL-V	s	i
+CTRL-V	S	i
+CTRL-V	R	i
+CTRL-V	I	i
+CTRL-V	A	i
+
+# Visual block -> Cmdline
+CTRL-V	:	c
+CTRL-V	!	c
+
+# Visual block -> Visual
+CTRL-V	v	v
+
+# Visual block -> Visual line
+CTRL-V	V	V
+
